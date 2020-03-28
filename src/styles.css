@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.container {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+}
+
+header,
+footer {
+  background-color: #999;
+  min-height: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #666;
+}
+
+header nav {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  background-color: #666;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  height: 100%;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: #000;
+}
+
+header nav a.active {
+  background-color: green;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 0.45rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  min-width: 300px;
+}
+
+input[type="text"].error {
+  background-color: #ffdddd;
+  border: 1px solid #552222;
+}
+
+button {
+  cursor: pointer;
+  background-color: #666;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1rem;
+}
+
+.users .user {
+  background-color: #ccc;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #666;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.users .user:hover {
+  background-color: #bbb;
+}
+
+.users .user .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.users .user .email {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.users .user .view-more {
+  background-color: #666;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.user-posts {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.posts {
+  border: 1px solid #666;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.posts .post {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.posts .post .view-post {
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #333;
+  background-color: #666;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.posts .post .heading {
+  font-weight: 600;
+}
+
+.single-post .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.single-post hr {
+  margin: 1.25rem 0;
+}
+
+.center {
+  text-align: center;
+}
